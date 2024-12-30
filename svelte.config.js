@@ -21,7 +21,7 @@ const config = {
 			}
 		},
 		paths: {
-			base: dev ? '' : '/chamchiking.github.io' // Replace with your repository name
+			base: dev ? '' : '' // Replace with your repository name
 		}
 	}
 };
