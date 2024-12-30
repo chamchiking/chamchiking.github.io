@@ -1,9 +1,14 @@
 <script>
-    import Introduction from '../components/Introduction.svelte';
-    import News from '../components/News.svelte';
+	import Introduction from '../components/Main/Introduction.svelte';
+	import Projects_Short from '../components/Main/Projects_Short.svelte';
+	import News_Short from '../components/Main/News_Short.svelte';
+	import Test from '../components/Test.svelte';
 </script>
-  
-<div class="container mx-auto px-4 py-10">
-    <Introduction />
-    <News />
-</div>
+
+<Introduction />
+
+<!-- <Test /> -->
+
+<Projects_Short />
+
+<News_Short />

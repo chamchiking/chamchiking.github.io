@@ -1,0 +1,55 @@
+[
+    {
+        "id": "1",
+        "title": "From Paper to Card: Transforming Design Implications with Generative AI",
+        "authors": "Donghoon Shin, Lucy Lu Wang, Gary Hsieh",
+        "conference": "CHI 2024",
+        "year": 2024,
+        "category": ["AI / NLP", "Design"],
+        "links": {
+            "project": "https://example.com/project1",
+            "pdf": "https://example.com/pdf1",
+            "video": "https://example.com/video1",
+            "demo": "https://example.com/demo1"
+        }
+    },
+    {
+        "id": "2",
+        "title": "AI-Assisted Causal Pathway Diagram for Human-Centered Design",
+        "authors": "Ruican Zhong*, Donghoon Shin*, Rosemary Meza, Predrag Klasnja, Lucas Colusso, Gary Hsieh",
+        "conference": "CHI 2024",
+        "year": 2024,
+        "category": ["AI / NLP", "Design"],
+        "links": {
+            "project": "https://example.com/project2",
+            "pdf": "https://example.com/pdf2",
+            "video": "https://example.com/video2",
+            "demo": "https://example.com/demo2"
+        }
+    },
+    {
+        "id": "3",
+        "title": "DiaryMate: Understanding User Perceptions and Experience in Human-AI Collaboration for Personal Journaling",
+        "authors": "Taewan Kim, Donghoon Shin, Young-Ho Kim, Hwajung Hong",
+        "conference": "CHI 2024",
+        "year": 2024,
+        "category": ["AI / NLP", "Healthcare"],
+        "links": {
+            "project": "https://example.com/project3",
+            "pdf": "https://example.com/pdf3",
+            "video": "https://example.com/video3"
+        }
+    },
+    {
+        "id": "4",
+        "title": "PlanFitting: Tailoring Personalized Exercise Plans with Large Language Models",
+        "authors": "Donghoon Shin, Gary Hsieh, Young-Ho Kim",
+        "conference": "arXiv (preprint)",
+        "year": 2023,
+        "category": ["AI / NLP", "Healthcare"],
+        "links": {
+            "project": "https://example.com/project4",
+            "preprint": "https://example.com/preprint4"
+        }
+    }
+]

@@ -11,8 +11,8 @@
 <div class="min-h-screen flex flex-col">
 	<Navbar />
 	
-		<div class="pt-16">
-			{@render children()}
-		</div>
-	<Footer />
+	<div class="pt-16">
+		{@render children()}
+		<Footer />
+	</div>
 </div>

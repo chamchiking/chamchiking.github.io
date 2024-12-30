@@ -1,16 +1,77 @@
 <script>
-  export let bio = "I'm an engineer specializing in SoC design, FPGA development, and AI systems.";
-  export let interests = ["HLS", "Domain-Specific Accelerators", "Autonomous Driving"];
+	import publications from '$lib/data/publications.json';
+
+	// Extract unique years and categories
+	const years = [...new Set(publications.map((pub) => pub.year))].sort((a, b) => b - a);
+	const categories = ['All', ...new Set(publications.flatMap((pub) => pub.category))];
+
+	// Active category for filtering
+	let activeCategory = 'All';
+
+	// Filtered publications
+	$: filteredPublications =
+		activeCategory === 'All'
+			? publications
+			: publications.filter((pub) => pub.category.includes(activeCategory));
 </script>
-  
-<section class="max-w-4xl mx-auto py-16">
-  <h1 class="text-4xl font-bold mb-8">About Me</h1>
-  <p class="text-lg leading-relaxed mb-6">{bio}</p>
-  <h2 class="text-2xl font-semibold mb-4">Interests</h2>
-  <ul class="list-disc pl-6">
-    {#each interests as interest}
-      <li class="text-lg">{interest}</li>
-    {/each}
-  </ul>
-</section>
-  
+
+<div class="max-w-7xl mx-auto px-4 py-10">
+	<div class="text-xl font-bold mb-6">Publications</div>
+
+	<!-- Category Filter -->
+	<div class="flex gap-4 mb-6">
+		{#each categories as category}
+			<button
+				class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 {activeCategory ===
+				category
+					? 'bg-gray-200 font-bold'
+					: ''}"
+				on:click={() => (activeCategory = category)}
+			>
+				{category}
+			</button>
+		{/each}
+	</div>
+
+	<!-- Publications Grouped by Year -->
+	{#each years as year}
+		<div class="mb-10">
+			<h2 class="text-xl font-semibold mb-4">{year}</h2>
+			<div class="space-y-6">
+				{#each filteredPublications.filter((pub) => pub.year === year) as pub}
+					<div class="space-y-2 border-b border-gray-200 pb-4">
+						<a
+							href={`/publications/${pub.id}`}
+							class="text-lg font-medium text-blue-500 hover:underline"
+						>
+							{pub.title}
+						</a>
+						<p class="text-sm text-gray-600">{pub.authors}</p>
+						<p class="text-sm text-gray-500">{pub.conference}</p>
+						<div class="flex gap-4 mt-2">
+							{#if pub.links.project}
+								<a href={pub.links.project} target="_blank" class="text-blue-500 hover:underline"
+									>Project</a
+								>
+							{/if}
+							{#if pub.links.pdf}
+								<a href={pub.links.pdf} target="_blank" class="text-blue-500 hover:underline">PDF</a
+								>
+							{/if}
+							{#if pub.links.video}
+								<a href={pub.links.video} target="_blank" class="text-blue-500 hover:underline"
+									>Video</a
+								>
+							{/if}
+							{#if pub.links.demo}
+								<a href={pub.links.demo} target="_blank" class="text-blue-500 hover:underline"
+									>Demo</a
+								>
+							{/if}
+						</div>
+					</div>
+				{/each}
+			</div>
+		</div>
+	{/each}
+</div>
