@@ -1,75 +1,75 @@
 [
     {
-      "title": "From Paper to Personalized Insights",
+      "title": "Insights",
       "description": "Tailoring design implications to individual designers' needs with generative AI",
-      "longDescription": "This project explores how generative AI can support designers in crafting highly personalized solutions for design problems by analyzing user-specific requirements.",
-      "teamRole": "Leading the project",
-      "diagram": "/images/diagram-personalized-insights.png",
+      "longDescription": " requirements.",
+      "teamRole": "project",
+      "diagram": "/images/diagram.png",
       "tags": ["Research", "LLM", "Design", "Translational science"],
       "image": "/images/personalized-insights.png"
     },
     {
-      "title": "Agentic Workflow in Design",
-      "description": "Persona-driven Collaborative Agents for Poster Design",
-      "longDescription": "Agentic Workflow in Design leverages collaborative agents to create personas and streamline poster design processes. The system integrates machine learning with human creativity.",
-      "teamRole": "Contributor: Worked on model integration",
-      "diagram": "/images/diagram-agentic-workflow.png",
+      "title": "Workflow",
+      "description": "Poster",
+      "longDescription": "human creativity.",
+      "teamRole": "integration",
+      "diagram": "/images/workflow.png",
       "tags": ["Research", "LLM", "Design", "Agent"],
-      "image": "/images/agentic-workflow.png"
+      "image": "/images/a-workflow.png"
     },
     {
-        "title": "From Paper to Personalized Insights",
+        "title": "Insights",
         "description": "Tailoring design implications to individual designers' needs with generative AI",
-        "longDescription": "This project explores how generative AI can support designers in crafting highly personalized solutions for design problems by analyzing user-specific requirements.",
-        "teamRole": "Leading the project",
-        "diagram": "/images/diagram-personalized-insights.png",
+        "longDescription": " requirements.",
+        "teamRole": "project",
+        "diagram": "/images/diagram.png",
         "tags": ["Research", "LLM", "Design", "Translational science"],
         "image": "/images/personalized-insights.png"
       },
       {
-        "title": "Agentic Workflow in Design",
-        "description": "Persona-driven Collaborative Agents for Poster Design",
-        "longDescription": "Agentic Workflow in Design leverages collaborative agents to create personas and streamline poster design processes. The system integrates machine learning with human creativity.",
-        "teamRole": "Contributor: Worked on model integration",
-        "diagram": "/images/diagram-agentic-workflow.png",
+        "title": "Workflow",
+        "description": "Poster",
+        "longDescription": "human creativity.",
+        "teamRole": "integration",
+        "diagram": "/images/workflow.png",
         "tags": ["Research", "LLM", "Design", "Agent"],
-        "image": "/images/agentic-workflow.png"
+        "image": "/images/a-workflow.png"
       },
       {
-        "title": "From Paper to Personalized Insights",
-        "description": "Tailoring design implications to individual designers' needs with generative AI",
-        "longDescription": "This project explores how generative AI can support designers in crafting highly personalized solutions for design problems by analyzing user-specific requirements.",
-        "teamRole": "Leading the project",
-        "diagram": "/images/diagram-personalized-insights.png",
+        "title": "Insights",
+        "description": "TAI",
+        "longDescription": " requirements.",
+        "teamRole": "project",
+        "diagram": "/images/diagram.png",
         "tags": ["Research", "LLM", "Design", "Translational science"],
         "image": "/images/personalized-insights.png"
       },
       {
-        "title": "Agentic Workflow in Design",
-        "description": "Persona-driven Collaborative Agents for Poster Design",
-        "longDescription": "Agentic Workflow in Design leverages collaborative agents to create personas and streamline poster design processes. The system integrates machine learning with human creativity.",
-        "teamRole": "Contributor: Worked on model integration",
-        "diagram": "/images/diagram-agentic-workflow.png",
+        "title": "Workflow",
+        "description": "Poster",
+        "longDescription": "human creativity.",
+        "teamRole": "integration",
+        "diagram": "/images/workflow.png",
         "tags": ["Research", "LLM", "Design", "Agent"],
-        "image": "/images/agentic-workflow.png"
+        "image": "/images/a-workflow.png"
       },
       {
-        "title": "From Paper to Personalized Insights",
+        "title": "Insights",
         "description": "Tailoring design implications to individual designers' needs with generative AI",
-        "longDescription": "This project explores how generative AI can support designers in crafting highly personalized solutions for design problems by analyzing user-specific requirements.",
-        "teamRole": "Leading the project",
-        "diagram": "/images/diagram-personalized-insights.png",
+        "longDescription": " requirements.",
+        "teamRole": "project",
+        "diagram": "/images/diagram.png",
         "tags": ["Research", "LLM", "Design", "Translational science"],
         "image": "/images/personalized-insights.png"
       },
       {
-        "title": "Agentic Workflow in Design",
-        "description": "Persona-driven Collaborative Agents for Poster Design",
-        "longDescription": "Agentic Workflow in Design leverages collaborative agents to create personas and streamline poster design processes. The system integrates machine learning with human creativity.",
-        "teamRole": "Contributor: Worked on model integration",
-        "diagram": "/images/diagram-agentic-workflow.png",
+        "title": "Workflow",
+        "description": "Poster",
+        "longDescription": "human creativity.",
+        "teamRole": "integration",
+        "diagram": "/images/workflow.png",
         "tags": ["Research", "LLM", "Design", "Agent"],
-        "image": "/images/agentic-workflow.png"
+        "image": "/images/a-workflow.png"
       }
 ]
   
