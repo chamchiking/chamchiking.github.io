@@ -1,0 +1,1 @@
+{"type":"data","nodes":[null,{"type":"data","data":[{"publication":1},{"id":2,"title":3,"authors":4,"conference":4,"year":5,"category":6,"links":9},"2","asdf","",2024,[7,8],"AI / NLP","Design",{"project":10,"pdf":11,"video":12,"demo":13},"https://example.com/project2","https://example.com/pdf2","https://example.com/video2","https://example.com/demo2"],"uses":{"params":["id"]}}]}
