@@ -18,6 +18,7 @@
 	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 		{#each projects as project}
 			<button
+				type="button"
 				class="block w-full bg-white rounded-lg shadow-md hover:shadow-lg transition transform hover:-translate-y-1 cursor-pointer text-left"
 				on:click={() => openModal(project)}
 			>
@@ -31,9 +32,9 @@
 					<p class="text-sm text-gray-600">{project.description}</p>
 					<div class="mt-2 flex flex-wrap gap-2">
 						{#each project.tags as tag}
-							<span class="bg-gray-100 text-gray-600 text-xs font-medium px-2 py-1 rounded"
-								>{tag}</span
-							>
+							<span class="bg-gray-100 text-gray-600 text-xs font-medium px-2 py-1 rounded">
+								{tag}
+							</span>
 						{/each}
 					</div>
 				</div>
@@ -44,6 +45,9 @@
 	{#if selectedProject}
 		<!-- Modal -->
 		<div
+			role="dialog"
+			aria-modal="true"
+			aria-labelledby="modal-title"
 			class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
 			on:click={closeModal}
 		>
@@ -53,6 +57,7 @@
 			>
 				<!-- Close button -->
 				<button
+					type="button"
 					class="absolute top-4 right-4 text-gray-500 hover:text-gray-800"
 					on:click={closeModal}
 				>
@@ -60,7 +65,7 @@
 				</button>
 
 				<!-- Project Details -->
-				<h2 class="text-2xl font-bold mb-2">{selectedProject.title}</h2>
+				<h2 id="modal-title" class="text-2xl font-bold mb-2">{selectedProject.title}</h2>
 				<p class="text-gray-700 mb-4">{selectedProject.description}</p>
 
 				<!-- Diagram -->
@@ -81,9 +86,9 @@
 
 				<div class="flex flex-wrap gap-2">
 					{#each selectedProject.tags as tag}
-						<span class="bg-gray-100 text-gray-600 text-xs font-medium px-3 py-1 rounded"
-							>{tag}</span
-						>
+						<span class="bg-gray-100 text-gray-600 text-xs font-medium px-3 py-1 rounded">
+							{tag}
+						</span>
 					{/each}
 				</div>
 			</div>
