@@ -13,7 +13,6 @@ const config = {
 		},
 		paths: {
 			base: ''
-			// base: process.env.NODE_ENV === 'production' ? '/chamchiking.github.io' : ''
 		}
 	}
 };
