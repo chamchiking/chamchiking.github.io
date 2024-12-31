@@ -1,11 +1,9 @@
 <script>
-	export let period;
+	export let period; // The period (date) to be displayed
 </script>
 
-<div class="dated-date text-gray-600 text-sm">
+<div class="w-16 text-gray-500 text-xs text-right whitespace-nowrap">
 	{#if period}
 		{period}
-	{:else}
-		<span>No period provided</span>
 	{/if}
 </div>

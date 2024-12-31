@@ -1,31 +1,11 @@
 <script>
 	import CvEducation from '../../components/Cv/Cv_Education.svelte';
-	import Cv_Education from '../../components/Cv/Cv_Education.svelte';
+	import CvResearchIntereset from '../../components/Cv/Cv_ResearchIntereset.svelte';
+	import CvPublication from '../../components/Cv/Cv_Publication.svelte';
 
 	export let name = 'Mincheol Cha';
 	export let email = 'mccha@capp.snu.ac.kr';
-	export let phone = '+82 010-7599-7679';
 	export let github = 'https://github.com/chamchiking';
-
-	export let researchInterests = [
-		'High-performance reconfigurable computing: FPGA, computer architecture, System on Chip (SoC)',
-		'Sensor Technologies: Dynamic Vision Sensors (DVS), sensor fusion',
-		'Machine learning and system: ML algorithm/system co-design, 3D Network',
-		'Electronic design automation (EDA): high-level synthesis (HLS), physical design'
-	];
-
-	export let publications = [
-		'[C1] An Energy-Efficient Daily Surveillance System with DVS-CIS Sensor Fusion and Event-based NPU Triggering, submitted to ISCAS 2025 (under review).',
-		'[C2] A DVS-CIS Sensor Data Receiver on FPGA with a 10 Gbps MIPI Controller, submitted to ISCAS 2025 (under review).',
-		'[C3] Live Demonstration: DVS-CIS Sensor Fusion System for Real-Time DNN-Based Object Detection, submitted to ISCAS 2025 (under review).',
-		'[C4] Towards Eight-bit Quantization for 3D U-Net Medical Image Segmentation via ROI-Based Calibration and Background-Aware Shift, accepted at ICCE-Asia 2024.',
-		'[C5] A Winograd-Convolution-Based Accelerator on FPGA for Real-time Object Detection, accepted at ICCE 2025.',
-		'[C6] A Low-Latency and Scalable Vector Engine with Operation Fusion for Transformers, published in AICAS 2024.',
-		'[C7] Analysis of the Effect of Feature Denoising from the Perspective of Corruption Robustness, published in ITC-CSCC 2023.',
-		'[C8] Enhancing Neural Networks Corruption Robustness with Convolution Kernel Size Change, presented at the Fall Conference of IEIE, 2023.',
-		'[C9] Performance Comparison Depending on Normalization Method in Single Batch Training Environment, presented at the Summer Conference of IEIE, 2023.',
-		'[C10] Implementation of a Convolution Layer Kernel Accelerator using High-Level Design Synthesis, presented at the Fall Conference of IEIE, 2022.'
-	];
 
 	export let patents = [
 		'[P1] Low-Latency and Scalable Vector System with Operation Fusion, Korean Patent DP240209, filed May 2024 (pending).'
@@ -91,29 +71,14 @@
 	<div class="text-xl font-bold mb-6">{name}</div>
 	<div class="mb-6">
 		<p>Email: <a href="mailto:{email}" class="text-blue-500">{email}</a></p>
-		<p>Phone: {phone}</p>
 		<p>GitHub: <a href={github} class="text-blue-500">{github}</a></p>
 	</div>
 
 	<CvEducation />
 
-	<div class="mb-10">
-		<h3 class="text-lg font-bold">RESEARCH INTERESTS</h3>
-		<ul class="list-none">
-			{#each researchInterests as interest}
-				<li>{interest}</li>
-			{/each}
-		</ul>
-	</div>
+	<CvResearchIntereset />
 
-	<div class="mb-10">
-		<h3 class="text-lg font-bold">PUBLICATIONS</h3>
-		<ul class="list-none">
-			{#each publications as publication}
-				<li>{publication}</li>
-			{/each}
-		</ul>
-	</div>
+	<CvPublication />
 
 	<div class="mb-10">
 		<h3 class="text-lg font-bold">PATENTS</h3>

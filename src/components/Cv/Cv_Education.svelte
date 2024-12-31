@@ -1,9 +1,10 @@
 <script>
+	import TitleComponent from './Title_Component.svelte';
 	import DatedComponent from './Dated_Component.svelte';
 
 	export let education = [
 		{
-			period: '2023 - Present',
+			period: '2023 - ',
 			institution: 'Seoul National University, Seoul, Korea',
 			degree: 'M.Sc. in Electrical and Computer Engineering',
 			gpa: 'GPA: 3.83/4.3',
@@ -19,17 +20,15 @@
 	];
 </script>
 
-<div class="max-w-7xl mx-auto px-4 py-10">
-	<div class="text-xl font-bold mb-6">EDUCATION</div>
+<div class="max-w-7xl mx-auto px-4 pt-5">
+	<TitleComponent title={'EDUCATION'} />
 	<div class="space-y-6">
 		{#each education as edu}
 			<DatedComponent period={edu.period}>
-				<div class="dated-content flex flex-col space-y-1">
-					<p class="font-semibold">{edu.institution}</p>
-					<p>{edu.degree}</p>
-					{#if edu.gpa}<p class="text-gray-500">{edu.gpa}</p>{/if}
-					{#if edu.advisors}<p class="text-gray-500">{edu.advisors}</p>{/if}
-				</div>
+				<p class="font-semibold">{edu.institution}</p>
+				<p>{edu.degree}</p>
+				{#if edu.gpa}<p class="text-gray-500">{edu.gpa}</p>{/if}
+				{#if edu.advisors}<p class="text-gray-500">{edu.advisors}</p>{/if}
 			</DatedComponent>
 		{/each}
 	</div>
