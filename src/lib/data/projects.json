@@ -4,63 +4,63 @@
       "description": "Tailoring design implications to individual designers' needs with generative AI",
       "longDescription": " requirements.",
       "teamRole": "project",
-      "diagram": "/images/diagram.png",
+      "diagram": "",
       "tags": ["Research", "LLM", "Design", "Translational science"],
-      "image": "/images/personalized-insights.png"
+      "image": ""
     },
     {
       "title": "Workflow",
       "description": "Poster",
       "longDescription": "human creativity.",
       "teamRole": "integration",
-      "diagram": "/images/workflow.png",
+      "diagram": "",
       "tags": ["Research", "LLM", "Design", "Agent"],
-      "image": "/images/a-workflow.png"
+      "image": ""
     },
     {
         "title": "Insights",
         "description": "Tailoring design implications to individual designers' needs with generative AI",
         "longDescription": " requirements.",
         "teamRole": "project",
-        "diagram": "/images/diagram.png",
+        "diagram": "",
         "tags": ["Research", "LLM", "Design", "Translational science"],
-        "image": "/images/personalized-insights.png"
+        "image": ""
       },
       {
         "title": "Workflow",
         "description": "Poster",
         "longDescription": "human creativity.",
         "teamRole": "integration",
-        "diagram": "/images/workflow.png",
+        "diagram": "",
         "tags": ["Research", "LLM", "Design", "Agent"],
-        "image": "/images/a-workflow.png"
+        "image": ""
       },
       {
         "title": "Insights",
         "description": "TAI",
         "longDescription": " requirements.",
         "teamRole": "project",
-        "diagram": "/images/diagram.png",
+        "diagram": "",
         "tags": ["Research", "LLM", "Design", "Translational science"],
-        "image": "/images/personalized-insights.png"
+        "image": ""
       },
       {
         "title": "Workflow",
         "description": "Poster",
         "longDescription": "human creativity.",
         "teamRole": "integration",
-        "diagram": "/images/workflow.png",
+        "diagram": "",
         "tags": ["Research", "LLM", "Design", "Agent"],
-        "image": "/images/a-workflow.png"
+        "image": ""
       },
       {
         "title": "Insights",
         "description": "Tailoring design implications to individual designers' needs with generative AI",
         "longDescription": " requirements.",
         "teamRole": "project",
-        "diagram": "/images/diagram.png",
+        "diagram": "",
         "tags": ["Research", "LLM", "Design", "Translational science"],
-        "image": "/images/personalized-insights.png"
+        "image": ""
       },
       {
         "title": "Workflow",
@@ -69,7 +69,7 @@
         "teamRole": "integration",
         "diagram": "/images/workflow.png",
         "tags": ["Research", "LLM", "Design", "Agent"],
-        "image": "/images/a-workflow.png"
+        "image": ""
       }
 ]
   
