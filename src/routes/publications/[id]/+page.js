@@ -1,6 +1,7 @@
+export const prerender = true;
+
 // Import the JSON data
 import publications from '$lib/data/publications.json';
-export const prerender = true;
 
 // List all dynamic routes for prerendering
 export async function entries() {
