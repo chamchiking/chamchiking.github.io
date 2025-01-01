@@ -42,11 +42,11 @@
 							</p>
 							{#if links}
 								<p>
+									{#if links.doi}
+										<span>[DOI]: {links.doi}</span>
+									{/if}
 									{#if links.pdf}
 										<a href={links.pdf} target="_blank">[PDF]</a>
-									{/if}
-									{#if links.doi}
-										<a href={links.doi} target="_blank">[DOI]</a>
 									{/if}
 								</p>
 							{/if}
