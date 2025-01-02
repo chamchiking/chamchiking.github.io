@@ -19,7 +19,7 @@
 	<div class="text-xl mb-6">Publications</div>
 
 	<!-- Category Filter -->
-	<div class="flex justify-center gap-4 mb-6 text-sm">
+	<div class="flex flex-wrap justify-center gap-2 mb-6 text-sm">
 		{#each categories as category}
 			<button
 				class="px-4 py-2 {activeCategory === category ? 'underline font-bold' : ''}"

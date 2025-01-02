@@ -26,8 +26,9 @@
 	<div class="flex flex-row items-baseline gap-6">
 		<!-- Left Section -->
 		<div class="flex-4 text-left space-y-1 mr-32">
-			<p class="text-gray-700">Mincheol's theme</p>
-			<p class="text-gray-500">Up-to-date as of {updateDate}</p>
+			<p>Mincheol's theme</p>
+			<p class="text-gray-500">Up-to-date as of</p>
+			<p>{updateDate}</p>
 		</div>
 
 		<!-- Right Section -->

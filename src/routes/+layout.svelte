@@ -9,7 +9,7 @@
 <div class="min-h-screen flex flex-col">
 	<Navbar />
 
-	<div class="pt-16">
+	<div class="pt-16 flex-1">
 		{@render children()}
 		<Footer />
 	</div>
