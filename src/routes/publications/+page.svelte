@@ -79,7 +79,7 @@
 							{/if}
 							{#if pub.links.pdf}
 								<a
-									href={pub.links.pdf}
+									href={`/publications/${pub.links.pdf}`}
 									target="_blank"
 									class="flex items-center gap-2 hover:underline"
 								>

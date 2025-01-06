@@ -6,7 +6,7 @@
 
 	<div class="flex flex-col-reverse md:flex-row md:items-center gap-6">
 		<!-- Text Content -->
-		<div class="flex-1 text-center md:text-left">
+		<div class="flex-1 text-left">
 			<h2 class="text-3xl md:text-4xl font-bold flex items-center justify-center md:justify-start">
 				Mincheol Cha
 			</h2>

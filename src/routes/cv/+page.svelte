@@ -29,6 +29,9 @@
 				<div class="w-16"></div>
 				<div class="flex-1 flex flex-col space-y-1 font-bold text-2xl py-6 leading-6">
 					{name}
+					<a href={`/cv/CV_mincheol.pdf`} target="_blank" class="flex items-center gap-2 text-sm">
+						<i class="fa-solid fa-file-pdf"></i> <span>PDF</span>
+					</a>
 				</div>
 			</div>
 		</div>

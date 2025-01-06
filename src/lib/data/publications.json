@@ -40,8 +40,10 @@
         "year": "2024",
         "category": ["Medical Imagning", "Quantization"],
         "status": "accepted",
-        "note": "To appear",
-        "links": {}
+        "note": "",
+        "links": {
+            "pdf": "C4.pdf"
+        }
     },
     {
         "id": "C5",
@@ -52,7 +54,9 @@
         "category": ["FPGA", "NPU"],
         "status": "accepted",
         "note": "To appear",
-        "links": {}
+        "links": {
+            "pdf": "C5.pdf"
+        }
     },
     {
         "id": "C6",
@@ -62,7 +66,8 @@
         "year": "2024",
         "category": ["FPGA", "Transformers"],
         "links": {
-            "pdf": "https://ieeexplore.ieee.org/document/10595857",
+            "pdf": "C6.pdf",
+            "pdf-web": "https://ieeexplore.ieee.org/document/10595857",
             "doi": "10.1109/AICAS59952.2024.10595857"
         }
     },
