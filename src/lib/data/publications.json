@@ -6,9 +6,11 @@
         "conference": "Proceedings of the IEEE International Symposium on Circuits and Systems (ISCAS)",
         "year": "2025",
         "category": ["FPGA", "DVS", "NPU"],
-        "status": "submitted",
-        "note": "Under review",
-        "links": {}
+        "status": "accepted",
+        "note": "To appear",
+        "links": {
+            "pdf": "C1.pdf"
+        }
     },
     {
         "id": "C2",
@@ -17,9 +19,11 @@
         "conference": "Proceedings of the IEEE International Symposium on Circuits and Systems (ISCAS)",
         "year": "2025",
         "category": ["FPGA", "DVS"],
-        "status": "submitted",
-        "note": "Under review",
-        "links": {}
+        "status": "accepted",
+        "note": "To appear",
+        "links": {
+            "pdf": "C2.pdf"
+        }
     },
     {
         "id": "C3",
@@ -28,9 +32,11 @@
         "conference": "Proceedings of the IEEE International Symposium on Circuits and Systems (ISCAS)",
         "year": "2025",
         "category": ["FPGA", "DVS", "NPU"],
-        "status": "submitted",
-        "note": "Under review",
-        "links": {}
+        "status": "accepted",
+        "note": "To appear",
+        "links": {
+            "pdf": "Live Demonstration: DVS-CIS Sensor Fusion System for Real-Time DNN-Based Object Detection.pdf"
+        }
     },
     {
         "id": "C4",
