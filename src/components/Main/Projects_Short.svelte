@@ -7,25 +7,43 @@
 
 	<!-- Auto-Scrolling Horizontal Container -->
 	<div class="relative overflow-hidden">
-		<div class="flex items-center space-x-6 animate-scroll hover:animate-pause">
+		<!-- Optional: fade effect -->
+		<div
+			class="pointer-events-none absolute left-0 top-0 h-full w-12 bg-gradient-to-r from-white to-transparent z-10"
+		></div>
+		<div
+			class="pointer-events-none absolute right-0 top-0 h-full w-12 bg-gradient-to-l from-white to-transparent z-10"
+		></div>
+
+		<div class="mt-6 mb-6 flex items-center space-x-6 animate-scroll hover:animate-pause">
 			{#each projects.concat(projects) as project, index}
 				<div
-					class="flex-shrink-0 w-56 bg-white rounded-lg hover:shadow-lg transition transform hover:scale-105"
+					class="flex-shrink-0 w-56 h-60 bg-white rounded-lg hover:shadow-lg transition transform hover:scale-105"
 				>
-					<img
-						src={project.image}
-						alt={project.title}
-						class="w-full h-40 object-cover rounded-t-lg"
-					/>
-					<div class="p-4">
-						<h2 class="text-sm font-semibold truncate">{project.title}</h2>
-						<p class="text-xs text-gray-600 truncate">{project.description}</p>
+					{#if project.mainImage && project.image != ''}
+						<img
+							src={project.mainImage}
+							alt={project.title}
+							class="w-full h-30 object-cover rounded-t-lg"
+						/>
+					{:else}
+						<img
+							src="/projects/alt_projects.jpg"
+							alt=""
+							class="w-full h-30 object-cover rounded-t-lg"
+						/>
+					{/if}
+
+					<div class="p-4 text-center">
+						<!-- <h2 class="text-sm font-semibold">{project.title}</h2> -->
+						<!-- <p class="text-xs text-gray-600">{project.description}</p> -->
+						<p class="text-xs text-gray-600">{project.shortDescription}</p>
 					</div>
 				</div>
 			{/each}
 		</div>
 	</div>
-	<div class="mt-6 text-right">
+	<div class="text-right">
 		<a href="/projects" class="hover:underline text-base text-xs"> > View All </a>
 	</div>
 </div>

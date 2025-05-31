@@ -6,8 +6,8 @@
         "conference": "Proceedings of the IEEE International Symposium on Circuits and Systems (ISCAS)",
         "year": "2025",
         "category": ["FPGA", "DVS", "NPU"],
-        "status": "accepted",
-        "note": "To appear",
+        "status": "published",
+        "note": "",
         "links": {
             "pdf": "An Energy-Efficient Daily Surveillance System with DVS-CIS Sensor Fusion and Event-based NPU Triggering.pdf"
         }
@@ -19,8 +19,8 @@
         "conference": "Proceedings of the IEEE International Symposium on Circuits and Systems (ISCAS)",
         "year": "2025",
         "category": ["FPGA", "DVS"],
-        "status": "accepted",
-        "note": "To appear",
+        "status": "published",
+        "note": "",
         "links": {
             "pdf": "A DVS-CIS Sensor Data Receiver on FPGA with a 10 Gbps MIPI Controller.pdf"
         }
@@ -32,8 +32,8 @@
         "conference": "Proceedings of the IEEE International Symposium on Circuits and Systems (ISCAS)",
         "year": "2025",
         "category": ["FPGA", "DVS", "NPU"],
-        "status": "accepted",
-        "note": "To appear",
+        "status": "published",
+        "note": "",
         "links": {
             "pdf": "Live Demonstration: DVS-CIS Sensor Fusion System for Real-Time DNN-Based Object Detection.pdf"
         }
@@ -45,7 +45,7 @@
         "conference": "Proceedings of the IEEE International Conference on Consumer Electronics - Asia (ICCE-Asia)",
         "year": "2024",
         "category": ["Medical Imagning", "Quantization"],
-        "status": "accepted",
+        "status": "published",
         "note": "",
         "links": {
             "pdf": "Towards Eight-bit Quantization for 3D U-Net Medical Image Segmentation via ROI-Based Calibration and Background-Aware Shift.pdf"
@@ -58,8 +58,8 @@
         "conference": "Proceedings of the 42nd IEEE International Conference on Consumer Electronics (ICCE)",
         "year": "2025",
         "category": ["FPGA", "NPU"],
-        "status": "accepted",
-        "note": "To appear",
+        "status": "published",
+        "note": "",
         "links": {
             "pdf": "A Winograd-Convolution-Based Accelerator on FPGA for Real-time Object Detection with Effective On-chip Buffer Access Patterns.pdf"
         }

@@ -11,4 +11,4 @@
 
 <Projects_Short />
 
-<News_Short />
+<!-- <News_Short /> -->
