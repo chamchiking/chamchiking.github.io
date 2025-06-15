@@ -5,12 +5,12 @@
 	const socialLinks = [
 		{
 			label: 'LinkedIn',
-			href: 'https://linkedin.com/mincheol',
+			href: 'https://linkedin.com/ironchamchi',
 			icon: 'fab fa-linkedin'
 		},
 		{
 			label: 'Facebook',
-			href: 'https://facebook.com/mincheol',
+			href: 'https://facebook.com/ironchamchi',
 			icon: 'fab fa-facebook'
 		},
 		{

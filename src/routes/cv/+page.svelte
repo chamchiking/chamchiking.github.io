@@ -6,16 +6,16 @@
 	import CvScholarship from '../../components/Cv/Cv_Scholarship.svelte';
 	import CvLanguage from '../../components/Cv/Cv_Language.svelte';
 
-	export let name = 'Mincheol Cha';
-	export let email = {
+	export const name = 'Mincheol Cha';
+	export const email = {
 		display: 'mccha@capp.snu.ac.kr',
 		link: 'mccha@capp.snu.ac.kr'
 	};
-	export let github = {
+	export const github = {
 		display: 'chamchiking (GitHub)',
 		link: 'https://github.com/chamchiking'
 	};
-	export let homepage = {
+	export const homepage = {
 		display: 'chamchiking.io',
 		link: 'https://chamchiking.github.io'
 	};
