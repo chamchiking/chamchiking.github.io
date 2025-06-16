@@ -1,0 +1,93 @@
+[
+    {
+        "id": 1,
+        "name": "Mincheol Cha",
+        "img": "/imgs/mincheol.jpg",
+        "affiliation": "Seoul National University",
+        "link": "https://chamchiking.github.io/"
+    },
+    {
+        "id": 2,
+        "name": "Keehyuk Lee",
+        "affiliation": "Seoul National University",
+        "img": "/imgs/person-dummy.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Bobaro Kim",
+        "affiliation": "Seoul National University",
+        "img": "/imgs/person-dummy.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Soosung Kim",
+        "affiliation": "Neuroreality Vision (NRV)",
+        "img": "/imgs/person-dummy.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Daniel Moon",
+        "affiliation": "Neuroreality Vision (NRV)",
+        "img": "/imgs/person-dummy.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Taeho Lee",
+        "affiliation": "Seoul National University",
+        "img": "/imgs/person-dummy.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Xuan Truong Nguyen",
+        "affiliation": "Seoul National University",
+        "img": "/imgs/person-dummy.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Taesung Kim",
+        "affiliation": "Sun Moon University",
+        "img": "/imgs/person-dummy.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Hyunsurk Ryu",
+        "affiliation": "Neuroreality Vision (NRV)",
+        "img": "/imgs/person-dummy.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Min-Ho Choi",
+        "affiliation": "Seoul National University",
+        "img": "/imgs/person-dummy.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Se-Hun Kim",
+        "affiliation": "Seoul National University",
+        "img": "/imgs/person-dummy.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Hyunha Hwang",
+        "affiliation": "Seoul National University",
+        "img": "/imgs/person-dummy.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Hyuk-Jae Lee",
+        "affiliation": "Seoul National University",
+        "img": "/imgs/person-dummy.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Kyujoong Lee",
+        "affiliation": "Sungshin Women's University",
+        "img": "/imgs/person-dummy.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Sangmin Lee",
+        "affiliation": "Seoul National University",
+        "img": "/imgs/person-dummy.jpg"
+    }
+]

@@ -2,6 +2,7 @@ export const prerender = true;
 
 // Import the JSON data
 import publications from '$lib/data/publications.json';
+import authors from '$lib/data/authors.json';
 
 // List all dynamic routes for prerendering
 export async function entries() {
@@ -25,5 +26,34 @@ export async function load({ params }) {
 		};
 	}
 
-	return { publication };
+	const enrichedAuthors = publication.authors.map((p) => {
+		const authorInfo = authors.find((a) => a.id === p.id);
+
+		// Base enriched object
+		const enriched = {
+			...p,
+			img: authorInfo?.img || '/imgs/person-dummy.jpg'
+		};
+
+		// Conditionally add 'link' only if it exists
+		if (authorInfo?.link) {
+			enriched.link = authorInfo.link;
+		}
+
+		// Conditionally add 'affiliation' only if it exists
+		if (authorInfo?.affiliation) {
+			enriched.affiliation = authorInfo.affiliation;
+		}
+
+		return enriched;
+	});
+
+	// Replace authors with enriched version
+	const enrichedPublication = {
+		...publication,
+		authors: enrichedAuthors
+	};
+	console.log(enrichedPublication);
+
+	return { enrichedPublication };
 }

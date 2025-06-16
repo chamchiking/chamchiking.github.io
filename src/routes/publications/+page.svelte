@@ -47,8 +47,8 @@
 						<!-- Authors -->
 						<p class="text-sm text-gray-600">
 							{#each pub.authors as author, index}
-								<span class={author === 'Cha, Mincheol' ? 'font-bold' : ''}>
-									{author}
+								<span class={author.name === 'Mincheol Cha' ? 'font-bold' : ''}>
+									{author.name}
 								</span>
 								<span>
 									{index < pub.authors.length - 1
