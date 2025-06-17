@@ -25,42 +25,49 @@
 			</p>
 		</div>
 
+		<!-- Author Cards -->
 		<div class="flex flex-wrap justify-center gap-x-8 gap-y-8 pt-24">
 			{#each authors as author}
 				<AuthorCard {author} />
 			{/each}
 		</div>
 
-		<div class="text-sm text-gray-700 px-4 pt-5">
-			<p class="mb-4">
-				<strong>Abstract</strong>
-			</p>
-			<p>
-				{enrichedPublication.abstract}
-			</p>
-		</div>
+		<!-- Abstract -->
+		{#if enrichedPublication.abstract}
+			<div class="text-sm text-gray-700 px-4 pt-5">
+				<p class="mb-4">
+					<strong>Abstract</strong>
+				</p>
+				<p>
+					{enrichedPublication.abstract}
+				</p>
+			</div>
+		{/if}
 
-		<div class="text-sm text-gray-700 px-4 pt-5">
-			<p class="mb-4">
-				<strong>Materials</strong>
-			</p>
-			<div class="flex gap-4 mt-2">
-				<a
-					href={`/publications/${enrichedPublication.links.pdf}`}
-					target="_blank"
-					class="flex items-center gap-2 hover:underline"
-				>
-					<i class="fa-solid fa-file-pdf"></i> <span>PDF</span>
-				</a>
-				<!-- <a
+		<!-- Materials -->
+		{#if enrichedPublication.links}
+			<div class="text-sm text-gray-700 px-4 pt-5">
+				<p class="mb-4">
+					<strong>Materials</strong>
+				</p>
+				<div class="flex gap-4 mt-2">
+					<a
+						href={`/publications/${enrichedPublication.links.pdf}`}
+						target="_blank"
+						class="flex items-center gap-2 hover:underline"
+					>
+						<i class="fa-solid fa-file-pdf"></i> <span>PDF</span>
+					</a>
+					<!-- <a
 					href={`/publications/${enrichedPublication.links.pdf}`}
 					target="_blank"
 					class="flex items-center gap-2 hover:underline"
 				>
 					<i class="fa-solid fa-file-pdf"></i> <span>PDF</span>
 				</a> -->
+				</div>
 			</div>
-		</div>
+		{/if}
 	</div>
 {:else}
 	<p class="text-red-500">Publication not found.</p>
