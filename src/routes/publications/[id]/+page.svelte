@@ -32,10 +32,34 @@
 		</div>
 
 		<div class="text-sm text-gray-700 px-4 pt-5">
-			<p class="mb-2">
+			<p class="mb-4">
 				<strong>Abstract</strong>
+			</p>
+			<p>
 				{enrichedPublication.abstract}
 			</p>
+		</div>
+
+		<div class="text-sm text-gray-700 px-4 pt-5">
+			<p class="mb-4">
+				<strong>Materials</strong>
+			</p>
+			<div class="flex gap-4 mt-2">
+				<a
+					href={`/publications/${enrichedPublication.links.pdf}`}
+					target="_blank"
+					class="flex items-center gap-2 hover:underline"
+				>
+					<i class="fa-solid fa-file-pdf"></i> <span>PDF</span>
+				</a>
+				<!-- <a
+					href={`/publications/${enrichedPublication.links.pdf}`}
+					target="_blank"
+					class="flex items-center gap-2 hover:underline"
+				>
+					<i class="fa-solid fa-file-pdf"></i> <span>PDF</span>
+				</a> -->
+			</div>
 		</div>
 	</div>
 {:else}

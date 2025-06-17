@@ -4,6 +4,8 @@ export const prerender = true;
 import publications from '$lib/data/publications.json';
 import authors from '$lib/data/authors.json';
 
+// import { marked } from 'marked'; // markdown parser
+
 // List all dynamic routes for prerendering
 export async function entries() {
 	return publications.map((publication) => ({
