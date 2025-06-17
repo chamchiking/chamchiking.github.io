@@ -292,7 +292,11 @@
             "Signal Processing"
         ],
         "status": "published",
-        "links": {}
+        "links": {
+            "pdf": "A Low-Latency and Scalable Vector Engine with Operation Fusion for Transformers.pdf",
+            "pdf-web": "https://ieeexplore.ieee.org/document/10595857",
+            "doi": "10.1109/AICAS59952.2024.10595857"
+        }
     },
     {
         "id": "C8",
@@ -321,7 +325,11 @@
             "Signal Processing"
         ],
         "status": "presented",
-        "links": {}
+        "links": {
+            "pdf": "A Low-Latency and Scalable Vector Engine with Operation Fusion for Transformers.pdf",
+            "pdf-web": "https://ieeexplore.ieee.org/document/10595857",
+            "doi": "10.1109/AICAS59952.2024.10595857"
+        }
     },
     {
         "id": "C9",
@@ -358,7 +366,11 @@
             "Signal Processing"
         ],
         "status": "presented",
-        "links": {}
+        "links": {
+            "pdf": "A Low-Latency and Scalable Vector Engine with Operation Fusion for Transformers.pdf",
+            "pdf-web": "https://ieeexplore.ieee.org/document/10595857",
+            "doi": "10.1109/AICAS59952.2024.10595857"
+        }
     },
     {
         "id": "C10",
@@ -384,6 +396,10 @@
             "NPU"
         ],
         "status": "presented",
-        "links": {}
+        "links": {
+            "pdf": "A Low-Latency and Scalable Vector Engine with Operation Fusion for Transformers.pdf",
+            "pdf-web": "https://ieeexplore.ieee.org/document/10595857",
+            "doi": "10.1109/AICAS59952.2024.10595857"
+        }
     }
 ]

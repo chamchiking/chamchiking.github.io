@@ -3,6 +3,7 @@ export const prerender = true;
 // Import the JSON data
 import publications from '$lib/data/publications.json';
 import authors from '$lib/data/authors.json';
+import { error } from '@sveltejs/kit';
 
 // import { marked } from 'marked'; // markdown parser
 
@@ -21,11 +22,7 @@ export async function load({ params }) {
 	const publication = publications.find((pub) => pub.id === id);
 
 	if (!publication) {
-		// Return a 404 status if publication not found
-		return {
-			status: 404,
-			error: new Error(`Publication with ID ${id} not found`)
-		};
+		throw error(404, `Publication with ID ${params.id} not found`);
 	}
 
 	const enrichedAuthors = publication.authors.map((p) => {
