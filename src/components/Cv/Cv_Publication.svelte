@@ -46,7 +46,7 @@
 										<span>[DOI]: {links.doi}</span>
 									{/if}
 									{#if links.pdf}
-										<a href={`/publications/${links.pdf}`} target="_blank">[PDF]</a>
+										<a href={`/publications/${id}/${links.pdf}`} target="_blank">[PDF]</a>
 									{/if}
 								</p>
 							{/if}

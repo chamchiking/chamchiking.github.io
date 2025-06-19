@@ -1,14 +1,23 @@
 <script>
 	export let selectedProject;
+	const projectId = selectedProject.id; // Extract project ID from the selected project
+
 	import { createEventDispatcher, onMount } from 'svelte';
+	import { marked } from 'marked';
 
 	const dispatch = createEventDispatcher();
 	let dialogEl;
 
-	onMount(() => {
+	let projectContentHtml = '';
+	onMount(async () => {
+		const res = await fetch(`/projects/${projectId}/content.md`);
+		const raw = await res.text();
+
 		if (dialogEl && !dialogEl.open) {
 			dialogEl.showModal(); // 💡 <dialog> must be opened like this
 		}
+		projectContentHtml = marked.parse(raw);
+		console.log(projectContentHtml);
 	});
 
 	function handleClose() {
@@ -39,29 +48,7 @@
 	<hr />
 	<div class="px-6 pt-6">
 		<div class="mb-4">
-			{#each selectedProject.contents as cont}
-				<!-- text -->
-				{#if cont.type === 'text'}
-					<p class="text-gray-800 mb-2">{cont.body}</p>
-				{:else if cont.type === 'img'}
-					<img
-						src={cont.src}
-						alt={cont.alt}
-						class="rounded-lg mx-auto mb-8"
-						style={`width: ${cont.width}`}
-					/>
-				{:else if cont.type === 'video'}
-					<video controls class="w-full rounded-lg mb-8">
-						<source src={cont.src} type="video/mp4" />
-						<track kind="captions" src={cont.captions} srclang="en" label="English captions" />
-						Your browser does not support the video tag.
-					</video>
-				{:else if cont.type === 'link'}
-					<a href={cont.href} class="text-blue-600 hover:underline" target="_blank">
-						{cont.body}
-					</a>
-				{/if}
-			{/each}
+			{@html projectContentHtml}
 		</div>
 
 		<hr />

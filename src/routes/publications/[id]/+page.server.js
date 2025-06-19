@@ -4,6 +4,9 @@ export const prerender = true;
 import publications from '$lib/data/publications.json';
 import authors from '$lib/data/authors.json';
 import { error } from '@sveltejs/kit';
+import fs from 'fs/promises';
+import path from 'path';
+import { marked } from 'marked';
 
 // import { marked } from 'marked'; // markdown parser
 
@@ -47,12 +50,34 @@ export async function load({ params }) {
 		return enriched;
 	});
 
-	// Replace authors with enriched version
+	// Read and parse Markdown content
+	let contentHtml = '';
+	try {
+		const contentPath = path.resolve('static/publications', id, 'content.md');
+		const contentMd = await fs.readFile(contentPath, 'utf-8');
+		contentHtml = marked.parse(contentMd);
+	} catch (e) {
+		console.warn(`Markdown content for ${id} not found`);
+		contentHtml = null;
+	}
+
+	// Read and parse Markdown abstract
+	let abstractHtml = '';
+	try {
+		const abstractPath = path.resolve('static/publications', id, 'abstract.md');
+		const abstractMd = await fs.readFile(abstractPath, 'utf-8');
+		abstractHtml = marked.parse(abstractMd);
+	} catch (e) {
+		console.warn(`Markdown abstract for ${id} not found`);
+		abstractHtml = null;
+	}
+
 	const enrichedPublication = {
 		...publication,
-		authors: enrichedAuthors
+		authors: enrichedAuthors,
+		content: contentHtml,
+		abstract: abstractHtml
 	};
-	console.log(enrichedPublication);
 
 	return { enrichedPublication };
 }
