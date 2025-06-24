@@ -4,6 +4,12 @@
 
 	import { createEventDispatcher, onMount } from 'svelte';
 	import { marked } from 'marked';
+	import DOMPurify from 'dompurify';
+
+	marked.setOptions({
+		gfm: true,
+		breaks: true
+	});
 
 	const dispatch = createEventDispatcher();
 	let dialogEl;
@@ -12,11 +18,12 @@
 	onMount(async () => {
 		const res = await fetch(`/projects/${projectId}/content.md`);
 		const raw = await res.text();
+		projectContentHtml = DOMPurify.sanitize(marked.parse(raw));
 
 		if (dialogEl && !dialogEl.open) {
 			dialogEl.showModal(); // 💡 <dialog> must be opened like this
 		}
-		projectContentHtml = marked.parse(raw);
+		console.log('raw: ', raw);
 		console.log(projectContentHtml);
 	});
 
