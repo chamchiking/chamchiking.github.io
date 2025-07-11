@@ -15,7 +15,7 @@ This project involved designing three modules for VGG16 hardware: convolution, f
 
 ## **Fully-connected (FC) module | baseline → systolic upgrade**
 
-<img src="/projects/P3/imgs/conv_diagram.jpg" style="width:46rem;" alt="conv diagram" /><br>
+<img src="/projects/P3/imgs/fc_diagram.jpg" style="width:46rem;" alt="conv diagram" /><br>
 
 • The original FC engine simply fetched 4 × 32-bit weights per cycle and accumulated them with an adder tree; profiling showed it dominated run-time once convolution became PE-bound.
 • We re-factored FC into a 16 × 16 systolic array constructed from PE4 tiles. Weight tiles are pre-shift-loaded west-to-east while activation tiles stream north-to-south; this reuse pattern turns 256 scalar MACs into 16 cycles of wave-front processing, delivering a measured 2.6 × speed-up and freeing ~18 % BRAM for larger batch sizes (at identical 200 MHz).
@@ -25,7 +25,7 @@ This project involved designing three modules for VGG16 hardware: convolution, f
 
 ## **Pooling module | line-buffered max-pool 2 × 2 / stride 2**
 
-<img src="/projects/P3/imgs/conv_diagram.jpg" style="width:46rem;" alt="conv diagram" /><br>
+<img src="/projects/P3/imgs/pool_diagram.jpg" style="width:46rem;" alt="conv diagram" /><br>
 
 • Shares the same featureReceive, biasReceive, and weightReceive FSM skeleton so that a single AXI-lite control word can switch between conv / FC / pool kernels at run-time.
 • Uses two 2-line circular buffers and a compare-accumulate datapath to emit pooled outputs every cycle once the pipeline is filled, guaranteeing no back-pressure on the preceding convolution layer.
