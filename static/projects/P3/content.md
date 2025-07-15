@@ -1,3 +1,5 @@
+<img src="/projects/P3/imgs/system_overview.jpg" style="width:46rem;" alt="conv diagram" /><br>
+
 This project involved designing three modules for VGG16 hardware: convolution, fully connected, and pooling, using Verilog.
 
 <br><br>
