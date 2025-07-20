@@ -2,9 +2,10 @@
 	export let selectedProject;
 	const projectId = selectedProject.id; // Extract project ID from the selected project
 
-	import { createEventDispatcher, onMount } from 'svelte';
+	import { createEventDispatcher, onMount, tick } from 'svelte';
 	import { marked } from 'marked';
 	import DOMPurify from 'dompurify';
+	import ProjectModalMaterials from './Project_Modal_Materials.svelte';
 
 	marked.setOptions({
 		gfm: true,
@@ -20,9 +21,17 @@
 		const raw = await res.text();
 		projectContentHtml = DOMPurify.sanitize(marked.parse(raw));
 
-		if (dialogEl && !dialogEl.open) {
-			dialogEl.showModal(); // 💡 <dialog> must be opened like this
+		await tick(); // wait for DOM to update
+
+		// trigger MathJax rendering if loaded
+		if (window.MathJax && typeof window.MathJax.typesetPromise === 'function') {
+			window.MathJax.typesetPromise();
 		}
+
+		if (dialogEl && !dialogEl.open) {
+			dialogEl.showModal(); // open modal after rendering
+		}
+
 		console.log('raw: ', raw);
 		console.log(projectContentHtml);
 	});
@@ -39,22 +48,27 @@
 	on:close={handleClose}
 	aria-labelledby="modal-title"
 >
-	<!-- Close Button -->
-	<button
-		class="absolute top-4 right-4 text-gray-500 hover:text-gray-800"
-		on:click={handleClose}
-		aria-label="Close modal"
-	>
-		x
-	</button>
+	<!-- Project Header -->
+	<div class="sticky top-0 bg-white z-10 border-b">
+		<!-- Close Button -->
+		<button
+			class="absolute top-4 right-4 text-gray-500 hover:text-gray-800"
+			on:click={handleClose}
+			aria-label="Close modal"
+			>x
+		</button>
+		<h2 id="modal-title" class="text-2xl font-bold pt-6 px-6 mb-2">{selectedProject.title}</h2>
+		<p class="text-gray-700 px-6 mb-4">{selectedProject.description}</p>
+		<!-- Publication Link -->
+		{#if selectedProject.publication}
+			<ProjectModalMaterials publication_id={selectedProject.publication} />
+		{/if}
+	</div>
 
 	<!-- Project Content -->
-	<h2 id="modal-title" class="text-2xl font-bold pt-6 px-6 mb-2">{selectedProject.title}</h2>
-	<p class="text-gray-700 px-6 mb-4">{selectedProject.description}</p>
-
 	<hr />
 	<div class="px-6 pt-6">
-		<div class="mb-4">
+		<div class="prose mb-4">
 			{@html projectContentHtml}
 		</div>
 

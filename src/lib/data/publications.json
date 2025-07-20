@@ -1,6 +1,6 @@
 [
     {
-        "id": "C1",
+        "id": "C10",
         "title": "An Energy-Efficient Daily Surveillance System with DVS-CIS Sensor Fusion and Event-based NPU Triggering",
         "authors": [
             {
@@ -54,7 +54,7 @@
         }
     },
     {
-        "id": "C2",
+        "id": "C9",
         "title": "A DVS-CIS Sensor Data Receiver on FPGA with a 10 Gbps MIPI Controller",
         "authors": [
             {
@@ -103,7 +103,7 @@
         }
     },
     {
-        "id": "C3",
+        "id": "C8",
         "title": "Live Demonstration: DVS-CIS Sensor Fusion System for Real-Time DNN-Based Object Detection",
         "authors": [
             {
@@ -153,7 +153,7 @@
         }
     },
     {
-        "id": "C4",
+        "id": "C7",
         "title": "Towards Eight-bit Quantization for 3D U-Net Medical Image Segmentation via ROI-Based Calibration and Background-Aware Shift",
         "authors": [
             {
@@ -186,7 +186,7 @@
         }
     },
     {
-        "id": "C5",
+        "id": "C6",
         "title": "A Winograd-Convolution-Based Accelerator on FPGA for Real-time Object Detection with Effective On-chip Buffer Access Patterns",
         "authors": [
             {
@@ -223,7 +223,7 @@
         }
     },
     {
-        "id": "C6",
+        "id": "C5",
         "title": "A Low-Latency and Scalable Vector Engine with Operation Fusion for Transformers",
         "authors": [
             {
@@ -256,7 +256,7 @@
         }
     },
     {
-        "id": "C7",
+        "id": "C4",
         "title": "Analysis of the Effect of Feature Denoising from the Perspective of Corruption Robustness",
         "authors": [
             {
@@ -297,7 +297,7 @@
         }
     },
     {
-        "id": "C8",
+        "id": "C3",
         "title": "Enhancing Neural Networks Corruption Robustness with Convolution Kernel Size Change",
         "authors": [
             {
@@ -330,7 +330,7 @@
         }
     },
     {
-        "id": "C9",
+        "id": "C2",
         "title": "Performance Comparison Depending on Normalization Method in Single Batch Training Environment",
         "authors": [
             {
@@ -371,7 +371,7 @@
         }
     },
     {
-        "id": "C10",
+        "id": "C1",
         "title": "Implementation of a Convolution Layer Kernel Accelerator using High-Level Design Synthesis",
         "authors": [
             {

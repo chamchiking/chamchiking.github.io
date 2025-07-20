@@ -63,13 +63,6 @@
 					>
 						<i class="fa-solid fa-file-pdf"></i> <span>PDF</span>
 					</a>
-					<!-- <a
-					href={`/publications/${enrichedPublication.links.pdf}`}
-					target="_blank"
-					class="flex items-center gap-2 hover:underline"
-				>
-					<i class="fa-solid fa-file-pdf"></i> <span>PDF</span>
-				</a> -->
 				</div>
 			</div>
 		{/if}
