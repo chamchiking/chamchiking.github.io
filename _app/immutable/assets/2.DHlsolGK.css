@@ -1,0 +1,1 @@
+@keyframes svelte-dhvirp-scroll{0%{transform:translate(0)}to{transform:translate(-100%)}}.animate-scroll.svelte-dhvirp{display:inline-flex;animation:svelte-dhvirp-scroll 100s linear infinite;width:-moz-max-content;width:max-content}.hover\:animate-pause.svelte-dhvirp:hover{animation-play-state:paused}

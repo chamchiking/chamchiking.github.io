@@ -1,0 +1,1 @@
+import{m as y,n as o,o as u,E as _,h as t,C as g,i,p as l,s as n,f as p,g as m}from"./CEBs5Fbs.js";function C(d,r){let s=null,E=t;var a;if(t){s=p;for(var e=m(document.head);e!==null&&(e.nodeType!==g||e.data!==d);)e=i(e);if(e===null)l(!1);else{var f=i(e);e.remove(),n(f)}}t||(a=document.head.appendChild(y()));try{o(()=>r(a),u|_)}finally{E&&(l(!0),n(s))}}export{C as h};

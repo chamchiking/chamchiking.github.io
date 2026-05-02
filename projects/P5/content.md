@@ -65,21 +65,21 @@ This project introduces a low-latency, scalable vector processing engine on FPGA
 
 ### Key Contributions
 
-1. Proposed a parallel datapath for mean and variance computation to reduce LayerNorm loop count from 6 to 3.  
-2. Designed an instruction set to fuse element-wise and accumulation operations for Softmax and LayerNorm.  
-3. Implemented a modular VPU pipeline with dedicated units: VFU, ATU, SFU, and OGU.  
-4. Demonstrated latency reduction of 40–50% compared to the baseline with minimal area overhead.  
-5. Verified the design with Vitis HLS and deployed it on Xilinx ZCU106 for real-time vector processing.  
+1. Proposed a parallel datapath for mean and variance computation to reduce LayerNorm loop count from 6 to 3.
+2. Designed an instruction set to fuse element-wise and accumulation operations for Softmax and LayerNorm.
+3. Implemented a modular VPU pipeline with dedicated units: VFU, ATU, SFU, and OGU.
+4. Demonstrated latency reduction of 40–50% compared to the baseline with minimal area overhead.
+5. Verified the design with Vitis HLS and deployed it on Xilinx ZCU106 for real-time vector processing.
 
 ### Technical Highlights
 
-- **Architecture**: Pipelined VPU supporting loop-level fusion, micro-instruction control, and BRAM-based input/output.  
-- **Interfaces**: BRAM/DDR streaming with instruction-driven scheduling; integrated into FPGA block design.  
-- **Tools**: Vitis HLS, Vivado, Xilinx Co-Simulation, Python-based performance and precision evaluation.  
-- **Algorithms**: LayerNorm and Softmax optimized with fused add-mult/sub-exp datapaths and FP32 accumulation fallback.  
+- **Architecture**: Pipelined VPU supporting loop-level fusion, micro-instruction control, and BRAM-based input/output.
+- **Interfaces**: BRAM/DDR streaming with instruction-driven scheduling; integrated into FPGA block design.
+- **Tools**: Vitis HLS, Vivado, Xilinx Co-Simulation, Python-based performance and precision evaluation.
+- **Algorithms**: LayerNorm and Softmax optimized with fused add-mult/sub-exp datapaths and FP32 accumulation fallback.
 
 ### Results
 
-- **Performance**: Achieved up to 50% latency reduction for Softmax and 40% for LayerNorm across input sizes.  
-- **Scalability**: Supports bandwidths from 4 to 64 FP16 elements/cycle; consistent speedup across vector lengths.  
-- **Power savings**: Reaches 1.57W at 125 MHz with 186.1 GOPS/W efficiency using 1033 DSPs and 2130 BRAM.  
+- **Performance**: Achieved up to 50% latency reduction for Softmax and 40% for LayerNorm across input sizes.
+- **Scalability**: Supports bandwidths from 4 to 64 FP16 elements/cycle; consistent speedup across vector lengths.
+- **Power savings**: Reaches 1.57W at 125 MHz with 186.1 GOPS/W efficiency using 1033 DSPs and 2130 BRAM.
