@@ -1,14 +1,12 @@
 <script>
 	import Introduction from '../components/Main/Introduction.svelte';
 	import Projects_Short from '../components/Main/Projects_Short.svelte';
-	import News_Short from '../components/Main/News_Short.svelte';
-	import Test from '../components/Test.svelte';
 </script>
+
+<svelte:head>
+	<title>Mincheol Cha — FPGA & ML Accelerator Research</title>
+</svelte:head>
 
 <Introduction />
 
-<!-- <Test /> -->
-
 <Projects_Short />
-
-<!-- <News_Short /> -->

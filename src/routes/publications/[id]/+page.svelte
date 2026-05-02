@@ -5,6 +5,29 @@
 	const { enrichedPublication } = data;
 </script>
 
+<svelte:head>
+	<title>{enrichedPublication?.title ?? 'Publication'} — Mincheol Cha</title>
+	{#if enrichedPublication}
+		<meta
+			name="description"
+			content="{enrichedPublication.title} — published at {enrichedPublication.conference} ({enrichedPublication.year})."
+		/>
+		<meta property="og:title" content={enrichedPublication.title} />
+		<meta
+			property="og:description"
+			content="{enrichedPublication.conference} ({enrichedPublication.year})"
+		/>
+		<meta
+			property="og:url"
+			content="https://chamchiking.github.io/publications/{enrichedPublication.id}"
+		/>
+		<link
+			rel="canonical"
+			href="https://chamchiking.github.io/publications/{enrichedPublication.id}"
+		/>
+	{/if}
+</svelte:head>
+
 {#if enrichedPublication}
 	<div class="max-w-7xl mx-auto px-4 py-10">
 		<h1 class="text-xl font-medium px-4 pt-5 leading-snug">{enrichedPublication.title}</h1>

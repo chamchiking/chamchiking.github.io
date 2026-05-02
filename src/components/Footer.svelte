@@ -4,19 +4,19 @@
 
 	const socialLinks = [
 		{
+			label: 'GitHub',
+			href: 'https://github.com/chamchiking',
+			icon: 'fab fa-github'
+		},
+		{
 			label: 'LinkedIn',
-			href: 'https://linkedin.com/ironchamchi',
+			href: 'https://www.linkedin.com/in/ironchamchi',
 			icon: 'fab fa-linkedin'
 		},
 		{
-			label: 'Facebook',
-			href: 'https://facebook.com/ironchamchi',
-			icon: 'fab fa-facebook'
-		},
-		{
-			label: 'Instagram',
-			href: 'https://instagram.com/iron_chamchi',
-			icon: 'fab fa-instagram'
+			label: 'Email',
+			href: 'mailto:mccha@capp.snu.ac.kr',
+			icon: 'fa-solid fa-envelope'
 		}
 	];
 </script>

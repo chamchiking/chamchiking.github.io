@@ -13,7 +13,7 @@
 
 			<p class="mt-3 text-lg text-gray-700">
 				I am a Master’s student in Electrical and Computer Engineering at Seoul National University,
-				advised by Professors Hyukjae Lee and Huan Truong.
+				advised by Professors Hyuk-Jae Lee and Xuan Truong Nguyen.
 			</p>
 
 			<p class="mb-4">
@@ -30,12 +30,6 @@
 				reconfigurable hardware and sensor integration for real-time systems.
 			</p>
 
-			<p>
-				<!-- I was honored to receive the <a
-					href="https://www.studyinkorea.go.kr/en/scholarship/Gks4Native1.do#"
-					class="text-blue-600 underline">2022 Korean Government Scholarship for Overseas Study</a
-				>, recognizing my academic achievements and research potential. -->
-			</p>
 		</div>
 
 		<!-- Profile Image -->

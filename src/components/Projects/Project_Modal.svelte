@@ -31,9 +31,6 @@
 		if (dialogEl && !dialogEl.open) {
 			dialogEl.showModal(); // open modal after rendering
 		}
-
-		console.log('raw: ', raw);
-		console.log(projectContentHtml);
 	});
 
 	function handleClose() {

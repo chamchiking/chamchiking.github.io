@@ -21,6 +21,17 @@
 	};
 </script>
 
+<svelte:head>
+	<title>CV — Mincheol Cha</title>
+	<meta
+		name="description"
+		content="Curriculum vitae of Mincheol Cha: education, research interests, publications, patents, scholarships, and languages."
+	/>
+	<meta property="og:title" content="CV — Mincheol Cha" />
+	<meta property="og:url" content="https://chamchiking.github.io/cv" />
+	<link rel="canonical" href="https://chamchiking.github.io/cv" />
+</svelte:head>
+
 <div class="max-w-7xl mx-auto px-4 py-10">
 	<!-- Mincheol Cha Headline -->
 	<div class="max-w-7xl mx-auto px-4 pt-5">

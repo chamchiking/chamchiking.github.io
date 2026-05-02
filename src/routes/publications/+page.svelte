@@ -16,6 +16,17 @@
 			: publications.filter((pub) => pub.category.includes(activeCategory));
 </script>
 
+<svelte:head>
+	<title>Publications — Mincheol Cha</title>
+	<meta
+		name="description"
+		content="Peer-reviewed publications by Mincheol Cha across ISCAS, ICCE, AICAS, ICCE-Asia, and IEIE — covering FPGA accelerators, DVS sensor fusion, quantization, and transformer hardware."
+	/>
+	<meta property="og:title" content="Publications — Mincheol Cha" />
+	<meta property="og:url" content="https://chamchiking.github.io/publications" />
+	<link rel="canonical" href="https://chamchiking.github.io/publications" />
+</svelte:head>
+
 <div class="max-w-7xl mx-auto px-4 py-10">
 	<div class="text-xl mb-6">Publications</div>
 
