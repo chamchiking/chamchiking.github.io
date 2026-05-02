@@ -16,16 +16,16 @@ To address this, we developed a real-time DVS-CIS sensor fusion system on a Xili
 ### Key Contributions
 
 1. **10Gbps MIPI RX Subsystem**
-  Designed a low‑latency MIPI D‑PHY interface supporting four 2.5 Gbps lanes, integrated with deskewing and packet decoding modules to handle high‑speed DVS streams.
+   Designed a low‑latency MIPI D‑PHY interface supporting four 2.5 Gbps lanes, integrated with deskewing and packet decoding modules to handle high‑speed DVS streams.
 2. **G‑AER Packet Decoder**
-  Implemented an efficient group Address Event Representation (G‑AER) decoder that extracts event coordinates and timestamps, converting them into pixel data at full throughput.
+   Implemented an efficient group Address Event Representation (G‑AER) decoder that extracts event coordinates and timestamps, converting them into pixel data at full throughput.
 3. **Inline Transpose Module**
-  Developed a novel transpose unit using URAM banks to reorder column‑major DVS data into row‑major format, employing partial writes and double buffering to prevent frame drops and maximize DRAM bandwidth.
+   Developed a novel transpose unit using URAM banks to reorder column‑major DVS data into row‑major format, employing partial writes and double buffering to prevent frame drops and maximize DRAM bandwidth.
 4. **Host‑FPGA PCIe Interface**
-  Employed Xilinx XDMA over PCIe Gen3 × 4 (32 Gbps) to transfer synchronized DVS and CIS frames to the host PC, enabling real‑time visualization and alignment.
+   Employed Xilinx XDMA over PCIe Gen3 × 4 (32 Gbps) to transfer synchronized DVS and CIS frames to the host PC, enabling real‑time visualization and alignment.
 
 ### Results
 
-- **Throughput**: Decoded up to 13,900 fps of DVS events with zero frame drops and concurrent 60 fps CIS streaming.  
-- **Latency**: Maintained sub‑millisecond end‑to‑end latency between sensor capture and host display.  
+- **Throughput**: Decoded up to 13,900 fps of DVS events with zero frame drops and concurrent 60 fps CIS streaming.
+- **Latency**: Maintained sub‑millisecond end‑to‑end latency between sensor capture and host display.
 - **Scalability**: Low DSP and LUT usage leaves headroom for integrating on‑chip NPUs or additional IP cores.

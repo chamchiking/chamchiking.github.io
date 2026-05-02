@@ -66,6 +66,7 @@
 	<hr />
 	<div class="px-6 pt-6">
 		<div class="prose mb-4">
+			<!-- eslint-disable-next-line svelte/no-at-html-tags -- sanitized via DOMPurify above -->
 			{@html projectContentHtml}
 		</div>
 

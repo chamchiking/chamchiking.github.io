@@ -17,7 +17,7 @@
 		></div>
 
 		<div class="mt-6 mb-6 flex items-center space-x-6 animate-scroll hover:animate-pause">
-			{#each projects.concat(projects) as project, index}
+			{#each projects.concat(projects) as project}
 				{#if project.publication}
 					<a href={`/publications/${project.publication}`} class="block">
 						<ProjectCard {project} />

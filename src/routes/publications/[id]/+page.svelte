@@ -68,6 +68,7 @@
 				<p class="mb-4">
 					<strong>Abstract</strong>
 				</p>
+				<!-- eslint-disable-next-line svelte/no-at-html-tags -- abstract is rendered from a trusted local markdown file at build time -->
 				{@html enrichedPublication.abstract}
 			</div>
 		{/if}

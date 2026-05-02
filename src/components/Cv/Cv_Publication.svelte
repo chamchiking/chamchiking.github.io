@@ -4,7 +4,7 @@
 
 	import publications from '$lib/data/publications.json';
 
-	export let mainAuthor = 'Cha, Mincheol';
+	export let mainAuthor = 'Mincheol Cha';
 
 	// Group publications by year
 	let groupedPublications = publications.reduce((acc, pub) => {
@@ -29,10 +29,10 @@
 								{#each authors as author, i}
 									{#if i > 0};
 									{/if}
-									{#if author === mainAuthor}
-										<strong>{author}</strong>
+									{#if author.name === mainAuthor}
+										<strong>{author.name}</strong>
 									{:else}
-										{author}
+										{author.name}
 									{/if}
 								{/each}.
 							</p>

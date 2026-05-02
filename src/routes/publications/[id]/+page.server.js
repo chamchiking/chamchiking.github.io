@@ -56,7 +56,7 @@ export async function load({ params }) {
 		const contentPath = path.resolve('static/publications', id, 'content.md');
 		const contentMd = await fs.readFile(contentPath, 'utf-8');
 		contentHtml = marked.parse(contentMd);
-	} catch (e) {
+	} catch {
 		console.warn(`Markdown content for ${id} not found`);
 		contentHtml = null;
 	}
@@ -67,7 +67,7 @@ export async function load({ params }) {
 		const abstractPath = path.resolve('static/publications', id, 'abstract.md');
 		const abstractMd = await fs.readFile(abstractPath, 'utf-8');
 		abstractHtml = marked.parse(abstractMd);
-	} catch (e) {
+	} catch {
 		console.warn(`Markdown abstract for ${id} not found`);
 		abstractHtml = null;
 	}

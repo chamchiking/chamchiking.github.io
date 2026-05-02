@@ -1,4 +1,3 @@
-
 This project focused on implementing Test-Driven Development (TDD) to improve server stability during significant architectural changes.<br>
 
 The work involved drafting extensible test structures and examples using pytest to minimize errors during migration to a microservices-based system.<br>

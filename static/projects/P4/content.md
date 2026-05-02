@@ -1,11 +1,10 @@
-
 In unmanned retail environments, the scarcity of human-labeled product images is a major obstacle. We adopted YOLOv3 for detection while synthesizing training data through advanced augmentation. Techniques such as cut-and-paste compositing, GP-GAN with content-loss blending, and complementary data-centric transformations expanded the dataset dramatically, enabling YOLOv3 to achieve robust, production-ready performance despite minimal manual labeling.
 This project focused on developing deep learning algorithms to improve object detection and tracking capabilities specifically tailored for unmanned stores.
 <br>
 
 ## **Key Aspects**
 
-1. **Raise detection accuracy** with less annotation cost.  
+1. **Raise detection accuracy** with less annotation cost.
 2. **Maintain millisecond-level latency** on low-power, embedded hardware.
 
 <br><br>
@@ -106,7 +105,7 @@ This project focused on developing deep learning algorithms to improve object de
 
 ## **Multi-Modal Enhancements**
 
-- **Tri-View Camera Array** – Front, left, and right RGB cameras provide complementary angles, recovering items hidden from a single viewpoint.  
+- **Tri-View Camera Array** – Front, left, and right RGB cameras provide complementary angles, recovering items hidden from a single viewpoint.
 - **Weight-Sensor Fusion** – Four load cells per shelf section supply mass-change cues that disambiguate visually similar SKUs and recover hidden pick/return events, boosting per-event recognition by **1.3×**.
 
 <br><br>
@@ -115,12 +114,12 @@ This project focused on developing deep learning algorithms to improve object de
 
 ## **Results**
 
-| Metric | Baseline | Final System |
-| ------ | -------- | ------------ |
-| COCO-style **mAP** | 42.30 % (auto-label only) | **82 %+** |
-| **End-to-End Latency** | — | **\< 120 ms** |
-| **Inference Throughput** | — | **45 fps** on Jetson NX @ \< 10 W |
-| **False-Negative Rate (heavy occlusion)** | 14 % | **4 %** |
+| Metric                                    | Baseline                  | Final System                      |
+| ----------------------------------------- | ------------------------- | --------------------------------- |
+| COCO-style **mAP**                        | 42.30 % (auto-label only) | **82 %+**                         |
+| **End-to-End Latency**                    | —                         | **\< 120 ms**                     |
+| **Inference Throughput**                  | —                         | **45 fps** on Jetson NX @ \< 10 W |
+| **False-Negative Rate (heavy occlusion)** | 14 %                      | **4 %**                           |
 
 <br><br>
 
@@ -128,9 +127,9 @@ This project focused on developing deep learning algorithms to improve object de
 
 ## **My Contributions**
 
-1. **Algorithm Engineering** – Designed the six-stage data-synthesis pipeline (GP-GAN, alpha-matting, stochastic compositing).  
-2. **Model Optimization** – Pruned and INT8-quantized YOLOv3 for Jetson NX / Orin deployment.  
-3. **Sensor Fusion** – Calibrated the tri-camera rig, wrote Arduino/HX711 firmware, and implemented vision + weight fusion logic.  
+1. **Algorithm Engineering** – Designed the six-stage data-synthesis pipeline (GP-GAN, alpha-matting, stochastic compositing).
+2. **Model Optimization** – Pruned and INT8-quantized YOLOv3 for Jetson NX / Orin deployment.
+3. **Sensor Fusion** – Calibrated the tri-camera rig, wrote Arduino/HX711 firmware, and implemented vision + weight fusion logic.
 4. **Experimental Lead** – Ran all mAP evaluations, ablation studies, and authored the technical report adopted as the rollout blueprint.
 
 ---

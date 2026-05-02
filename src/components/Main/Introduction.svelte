@@ -29,7 +29,6 @@
 				>, graduating <em>cum laude</em>, and am currently pursuing my M.Sc. with a focus on
 				reconfigurable hardware and sensor integration for real-time systems.
 			</p>
-
 		</div>
 
 		<!-- Profile Image -->
